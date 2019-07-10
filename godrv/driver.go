@@ -6,13 +6,14 @@ import (
 	"database/sql/driver"
 	"errors"
 	"fmt"
-	"github.com/ziutek/mymysql/mysql"
-	"github.com/ziutek/mymysql/native"
 	"io"
 	"net"
 	"strconv"
 	"strings"
 	"time"
+
+	"github.com/nero1991/mymysql/mysql"
+	"github.com/nero1991/mymysql/native"
 )
 
 type conn struct {

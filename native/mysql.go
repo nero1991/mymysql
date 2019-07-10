@@ -10,8 +10,8 @@ import (
 	"strings"
 	"time"
 
+	"github.com/nero1991/mymysql/mysql"
 	log "github.com/nero1991/serverengine/log"
-	"github.com/ziutek/mymysql/mysql"
 )
 
 type serverInfo struct {

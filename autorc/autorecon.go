@@ -2,11 +2,12 @@
 package autorc
 
 import (
-	"github.com/ziutek/mymysql/mysql"
 	"io"
 	"log"
 	"net"
 	"time"
+
+	"github.com/nero1991/mymysql/mysql"
 )
 
 // Return true if error is network error or UnexpectedEOF.

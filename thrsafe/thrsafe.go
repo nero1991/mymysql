@@ -9,11 +9,12 @@
 package thrsafe
 
 import (
-	"github.com/ziutek/mymysql/mysql"
-	_ "github.com/ziutek/mymysql/native"
 	"io"
 	"sync"
 	"time"
+
+	"github.com/nero1991/mymysql/mysql"
+	_ "github.com/nero1991/mymysql/native"
 )
 
 type Conn struct {

@@ -1,10 +1,11 @@
 package main
 
 import (
-	"os"
 	"fmt"
-	"github.com/ziutek/mymysql/mysql"
-	_ "github.com/ziutek/mymysql/thrsafe"
+	"os"
+
+	"github.com/nero1991/mymysql/mysql"
+	_ "github.com/nero1991/mymysql/thrsafe"
 )
 
 func printOK() {

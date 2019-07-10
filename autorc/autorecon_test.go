@@ -1,8 +1,9 @@
 package autorc
 
 import (
-	_ "github.com/ziutek/mymysql/thrsafe"
 	"testing"
+
+	_ "github.com/nero1991/mymysql/thrsafe"
 )
 
 var (

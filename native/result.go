@@ -2,10 +2,11 @@ package native
 
 import (
 	"errors"
-	"github.com/ziutek/mymysql/mysql"
 	"log"
 	"math"
 	"strconv"
+
+	"github.com/nero1991/mymysql/mysql"
 )
 
 type Result struct {

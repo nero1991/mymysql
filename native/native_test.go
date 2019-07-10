@@ -3,12 +3,13 @@ package native
 import (
 	"bytes"
 	"fmt"
-	"github.com/ziutek/mymysql/mysql"
 	"io/ioutil"
 	"os"
 	"reflect"
 	"testing"
 	"time"
+
+	"github.com/nero1991/mymysql/mysql"
 )
 
 var (
