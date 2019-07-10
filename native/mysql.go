@@ -4,12 +4,14 @@ package native
 import (
 	"bufio"
 	"fmt"
-	"github.com/ziutek/mymysql/mysql"
 	"io"
 	"net"
 	"reflect"
 	"strings"
 	"time"
+
+	log "github.com/nero1991/serverengine/log"
+	"github.com/ziutek/mymysql/mysql"
 )
 
 type serverInfo struct {
@@ -365,6 +367,9 @@ func (my *Conn) Start(sql string, params ...interface{}) (res mysql.Result, err 
 	if len(params) != 0 {
 		sql = fmt.Sprintf(sql, params...)
 	}
+
+	log.SQL(sql)
+
 	// Send query
 	my.sendCmdStr(_COM_QUERY, sql)
 
