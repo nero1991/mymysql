@@ -355,6 +355,14 @@ func (my *Conn) getResponse() (res *Result) {
 // fmt.Sprintf(sql, params...).
 // You must get all result rows (if they exists) before next query.
 func (my *Conn) Start(sql string, params ...interface{}) (res mysql.Result, err error) {
+	defer func() {
+		if err == nil {
+			return
+		}
+
+		log.Erro("%v\n%v", sql, err)
+	}()
+
 	defer catchError(&err)
 
 	if my.net_conn == nil {
