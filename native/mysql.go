@@ -360,7 +360,7 @@ func (my *Conn) Start(sql string, params ...interface{}) (res mysql.Result, err 
 			return
 		}
 
-		log.Erro("%v\n%v", sql, err)
+		log.ESQL("%v\n%v", sql, err)
 	}()
 
 	defer catchError(&err)
